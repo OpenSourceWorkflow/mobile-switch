@@ -33,6 +33,12 @@ Include this link on your mobile website:
 
 Then include the script and let it do the trick for you.
 
+data-*
+------
+* *data-website-type*: lets the script know what the website's current type is
+* *data-breakpoint*: the script will ask users to go to the mobile website if their browsers width is below this breakpoint
+* *data-msg*: The message you would like to use when the script asks users to go to the mobile website
+
 Known issues
 ------------
 
