@@ -88,6 +88,8 @@ Failsafe function-container
         } else {
           web_type = 'desktop';
         }
+
+        // todo: save current sites choice
         window.location = SwitchToMobile.url + '?mf_mobile_switch=' + web_type;
       });
     },
