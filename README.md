@@ -1,5 +1,5 @@
-mf_mobileSwitch
-===========================
+mf_mobileSwitch [beta]
+======================
 
 This script lets user know that you have mobile websites. It asks them if they would like to go to it and if so it remembers this choice. 
 
