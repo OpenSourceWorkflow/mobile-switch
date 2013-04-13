@@ -19,7 +19,7 @@ Include this link on your desktop website:
   >go to mobile website</a>
 ```
 
-Include this link on your desktop website:
+Include this link on your mobile website:
 
 ```html
 <a 
