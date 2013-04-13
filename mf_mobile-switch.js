@@ -47,8 +47,6 @@ Failsafe function-container
   var SwitchToMobile = {
     cacheElements: function() {
       this.$switch_link = $('.switch-link');
-      // this.$switch_to_mobile = $('.switch-to-mobile');
-      // this.$switch_to_desktop = $('.switch-to-desktop');
     },
     init: function() {
       // cache Elements
@@ -78,6 +76,7 @@ Failsafe function-container
 
       // console.log(this.GET.mf_mobile_switch);
       console.log(SwitchToMobile);
+
     },
     bindEvents: function() {
       this.$switch_link.on('click', function(event) {

@@ -43,3 +43,12 @@ Known issues
 ------------
 
 * this approach requires the mobile user to load the desktop DOM and jQuery before switching to mobile website. (It all depends on where you put your jQuery and this script)
+
+
+Roadmap
+-------
+
+* I still need to do some testing on different domains
+* More Documentation
+* might add a simple www. to m. switch if the href is identical
+* clean up code
