@@ -62,13 +62,13 @@ Failsafe function-container
       this.website_type   = this.$switch_link.data('website-type');
       this.GET            = this.getGET();
 
+      // set choice (user changes from mobile to desktop)
+      if (this.GET.mf_mobile_switch) {
+        this.setChoice(this.GET.mf_mobile_switch);
+      }
+
       // get last remembered status
       this.getChoice();
-
-      // set choice (user changes from mobile to desktop)
-      if (this.GET) {
-        this.setChoice('desktop');
-      }
 
       // bind Events
       this.bindEvents();
@@ -76,7 +76,7 @@ Failsafe function-container
       // check for website type
       this.checkWebsiteType();
 
-      console.log(this.GET);
+      // console.log(this.GET.mf_mobile_switch);
       console.log(SwitchToMobile);
     },
     bindEvents: function() {
@@ -84,12 +84,11 @@ Failsafe function-container
         event.preventDefault();
 
         var web_type;
-        if (this.website_type === 'desktop') {
+        if (SwitchToMobile.website_type === 'desktop') {
           web_type = 'mobile';
         } else {
           web_type = 'desktop';
         }
-
         window.location = SwitchToMobile.url + '?mf_mobile_switch=' + web_type;
       });
     },
@@ -104,6 +103,8 @@ Failsafe function-container
           params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
         }
         return params;
+      } else {
+        return false;
       }
     },
     getChoice: function() {
@@ -120,8 +121,7 @@ Failsafe function-container
     },
     checkWebsiteType: function() {
 
-      if((this.viewportWidth >= this.breakpoint) && (this.choice === undefined) && (this.website_type !== 'mobile')) {
-        console.log('if');
+      if((this.viewportWidth <= this.breakpoint) && (this.choice === undefined) && (this.website_type !== 'mobile')) {
 
         var choice = confirm(this.msg);
 
@@ -133,9 +133,7 @@ Failsafe function-container
         }
 
       } else if ((this.choice === 'mobile') && (this.website_type === 'desktop')) {
-        console.log('else');
           window.location = this.url;
-
       }
     }
   };
