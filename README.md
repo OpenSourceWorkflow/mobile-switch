@@ -42,4 +42,4 @@ data-*
 Known issues
 ------------
 
-* this approach requires the mobile user to load the desktop website on first visit.
+* this approach requires the mobile user to load the desktop DOM and jQuery before switching to mobile website. (It all depends on where you put your jQuery and this script)
