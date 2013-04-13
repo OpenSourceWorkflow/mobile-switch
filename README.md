@@ -44,7 +44,7 @@ How does it work?
 
 The script looks for the window.width. If this is below the breakpoint it will ask the user to go to the mobile website. 
 
-The users choice will be stored in a cookie. When the user click on one of the links this choice will be updated via GET parameter.
+The users choice will be stored in a cookie. When the user clicks on one of the links this choice will be updated via GET parameter.
 
 That's it.
 
