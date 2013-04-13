@@ -39,6 +39,15 @@ data-*
 * *data-breakpoint*: the script will ask users to go to the mobile website if their browsers width is below this breakpoint
 * *data-msg*: The message you would like to use when the script asks users to go to the mobile website
 
+How does it work?
+----------------
+
+The script looks for the window.width. If this is below the breakpoint it will ask the user to go to the mobile website. 
+
+The users choice will be stored in a cookie. When the user click on one of the links this choice will be updated via GET parameter.
+
+That's it.
+
 Known issues
 ------------
 
