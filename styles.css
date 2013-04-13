@@ -1,0 +1,23 @@
+body {
+  background: #ccc;
+  font-family: arial, sans;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  background: #aaa;
+  border: 1px solid #ddd;
+}
+
+.mobile {
+  width: 80%;
+  padding: 5%;
+  max-width: 960px;
+}
+
+.desktop {
+  width: 900px;
+  padding: 30px;
+}
