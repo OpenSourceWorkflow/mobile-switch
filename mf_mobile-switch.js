@@ -90,6 +90,9 @@ Failsafe function-container
         }
 
         // todo: save current sites choice
+        SwitchToMobile.setChoice(web_type);
+
+        // go to mobile website
         window.location = SwitchToMobile.url + '?mf_mobile_switch=' + web_type;
       });
     },
