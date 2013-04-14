@@ -5,10 +5,6 @@ This script lets user know that you have mobile websites. It asks them if they w
 
 User can switch between mobile and desktop Website.
 
-To do
------
-* save users choice on click for current domain
-
 Usage
 -----
 Include this link on your desktop website:
