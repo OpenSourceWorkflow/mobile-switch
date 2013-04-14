@@ -74,9 +74,6 @@ Failsafe function-container
       // check for website type
       this.checkWebsiteType();
 
-      console.log(this.GET.mf_mobile_switch);
-      console.log(SwitchToMobile);
-
     },
     bindEvents: function() {
       this.$switch_link.on('click', function(event) {
