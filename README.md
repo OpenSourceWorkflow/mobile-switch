@@ -1,7 +1,7 @@
 mf_mobileSwitch [beta]
 ======================
 
-This script lets user know that you have mobile websites. It asks them if they would like to go to it and if so it remembers this choice. 
+This script lets user know that you have a mobile website. It asks them if they would like to go to it and if so it remembers this choice. 
 
 User can switch between mobile and desktop Website.
 
@@ -33,8 +33,10 @@ Include this link on your mobile website:
 
 Then include the script and let it do the trick for you.
 
-data-*
-------
+attributes
+----------
+* *href*: link to your desktop/mobile version of the current page
+* *class*: required for events and identification
 * *data-website-type*: lets the script know what the website's current type is
 * *data-breakpoint*: the script will ask users to go to the mobile website if their browsers width is below this breakpoint
 * *data-msg*: The message you would like to use when the script asks users to go to the mobile website
@@ -51,13 +53,11 @@ That's it.
 Known issues
 ------------
 
-* this approach requires the mobile user to load the desktop DOM and jQuery before switching to mobile website. (It all depends on where you put your jQuery and this script)
-
+* this approach requires the mobile user to load the desktop DOM and jQuery before switching to mobile website.
 
 Roadmap
 -------
 
 * I still need to do some testing on different domains
-* More Documentation
 * might add a simple www. to m. switch if the href is identical
 * clean up code
