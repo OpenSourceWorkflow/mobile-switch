@@ -53,7 +53,7 @@ That's it.
 Known issues
 ------------
 
-* this approach may require the mobile user to load the desktop DOM and jQuery before switching to mobile website. It all depends on where the script is loaded. Possible Workaround could be to put this script in the <head>
+* this approach may require the mobile user to load the desktop DOM and jQuery before switching to mobile website. It all depends on where the script is loaded. Possible Workaround could be to put this script in the head.
 
 Roadmap
 -------
